@@ -50,6 +50,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 14px;
+	box-shadow: 0 0 32px rgba(0,0,0,.15);
 }
 
 #nav-white ul {
@@ -64,4 +65,31 @@ nav {
 #nav-white img {
 	border-left: 1px solid #afaabf;
 	padding: 13px;
+}
+
+#cover {
+	padding: 5px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.cover-fig > img {
+	grid-row: 1/-1; 
+}
+
+#main-fig img[src*="logo"] {
+	width: 20%;
+}
+
+#main-fig {
+	grid-column: 1/3;
+	grid-row: 1/-1;
+}
+
+.secondary-fig {
+	grid-column: 3/4;
+	grid-row: span 1;
+	display: flex;
+	background: 
 }
