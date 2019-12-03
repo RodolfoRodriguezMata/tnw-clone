@@ -2,4 +2,66 @@
 	display: none;
 }
 
-nav
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#nav-black {
+	background-color: black;
+	font-size: 13px;
+	color: hsla(0,0%,100%,.6);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#left-nav {
+	display: flex;
+}
+
+#left-nav li {
+	margin-right: 7.5px;
+	padding: 10px;
+}
+
+#left-nav li:nth-child(1) {
+	margin-left: 5px;
+}
+
+#right-nav {
+	display: flex;
+}
+
+#right-nav li {
+	margin-left: 7.5px;
+}
+
+#nav-white {
+	background-color: white;
+	display: flex;
+	color: #afaabf;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+}
+
+#nav-white ul {
+	display: flex;
+	padding-left: 10px;
+}
+
+#nav-white li {
+	padding: 5px;
+}
+
+#nav-white img {
+	border-left: 1px solid #afaabf;
+	padding: 13px;
+}
