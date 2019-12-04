@@ -89,6 +89,7 @@ nav {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	height: 100%;	
+	position: relative;
 }
 
 .cover-upper {
@@ -100,6 +101,8 @@ nav {
 	align-items: flex-start;
 	color: #fff;
 	padding: 15px;
+	position: relative;
+	z-index: 3;
 }
 
 .cover-logo {
@@ -117,6 +120,8 @@ nav {
 	align-items: flex-start;
 	flex-direction: column;
 	padding: 15px;
+	position: relative;
+	z-index: 3;
 }
 
 .cover-section {
@@ -159,6 +164,32 @@ nav {
 	grid-row: 1 / -1;
 }
 
+.orange {
+	background: transparent no-repeat url('../images/orange-gradient.png');
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.7;
+	mix-blend-mode: lighten;
+	background-size: cover;
+	background-position: 0 0;
+}
+
+.black {
+	background: linear-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1));
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-size: 100% 100%;
+	background-position: 0 0;
+}
+
 .background-2 {
 	width: 100%;
 	height: 36.9vh;
@@ -174,6 +205,7 @@ nav {
 .secondary-fig {
 	display: grid;
 	height: 50%;
+	position: relative;
 }
 
 .secondary-fig div {
@@ -185,4 +217,8 @@ nav {
 	grid-column: 1 / -1;
 	grid-row: 1 / -1;
 	padding: 7.5px;
+}
+
+img[src*="arrow.svg"] {
+	width: 16px;
 }
