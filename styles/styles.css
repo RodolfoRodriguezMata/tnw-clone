@@ -222,3 +222,140 @@ nav {
 img[src*="arrow.svg"] {
 	width: 16px;
 }
+
+#latest-news {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 40px;
+}
+
+#latest-news ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#latest-news li {
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+}
+
+.title {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 30.8px;
+	color: #f42;
+	padding-left: 10px;
+}
+
+.latest-img {
+	width: 270px;
+	height: 135px;
+	margin-bottom: 6px;
+	border: 0.5px solid #aaa;
+}
+
+.latest-title {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+.latest-about {
+	font-size: 13px;
+	line-height: 20px;
+	color: #aaa;
+	padding-top: 6px;
+}
+
+.funding-nav{
+	display:flex;
+	justify-content: space-between;
+	padding: 40px;
+}
+
+#latest-funding div ul {
+	display: flex;
+	color: #f42;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 12px;
+}
+
+#latest-funding div li {
+	padding: 0 10px;
+}
+
+#latest-funding div li:nth-child(2) {
+	border-right: 1px solid #f42;
+	border-left: 1px solid #f42;
+}
+
+#funding-card {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.funding-top {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 2fr;
+}
+
+.funding-img {
+	height: 60px;
+	width: 60px;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+.funding-name {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+.worth {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.series {
+	font-size: 12px;
+	line-height: 18px;
+	opacity: 0.5;
+}
+
+.industries,
+.ventures {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #555;
+}
+
+.industries img,
+.ventures img {
+	padding: 0 5px;
+}
+
+.funding-desc {
+	font-size: 12px;
+	color: #555;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.funding-source {
+	font-size: 12px;
+	color: #aaa;
+	font-weight: 400;
+	line-height: 20px;
+}
