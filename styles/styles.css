@@ -15,6 +15,12 @@ nav {
 	box-shadow: 0 0 32px rgba(0,0,0,.15);
 }
 
+.centering {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
 #nav-black {
 	background-color: black;
 	font-size: 13px;
@@ -224,18 +230,17 @@ img[src*="arrow.svg"] {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 40px;
 }
 
 #latest-news ul {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 #latest-news li {
 	display: flex;
 	flex-direction: column;
-	padding: 12px;
 }
 
 .title {
@@ -243,7 +248,7 @@ img[src*="arrow.svg"] {
 	font-weight: 700;
 	line-height: 30.8px;
 	color: #f42;
-	padding-left: 10px;
+	padding-bottom: 22px;
 }
 
 .latest-img {
@@ -268,38 +273,40 @@ img[src*="arrow.svg"] {
 
 .cards-container {
 	display: flex;
-	padding: 40px;
-
+	justify-content: space-between;
 }
 
 .funding-nav{
 	display:flex;
 	justify-content: space-between;
-	padding: 40px;
+	padding-bottom: 20px;
 }
 
-#latest-funding div ul {
+.funding-nav .title {
+	padding: 0;
+}
+
+.funding-nav ul {
 	display: flex;
 	color: #f42;
 	font-size: 16px;
 	line-height: 18px;
-	padding: 12px;
-}
-
-#latest-funding div li {
-	padding: 0 10px;
+	padding: 12px 0;
+	flex-basis: 30%;
+	justify-content: space-between;
 }
 
 #latest-funding div li:nth-child(2) {
 	border-right: 1px solid #f42;
 	border-left: 1px solid #f42;
+	padding: 0 10px;
 }
 
 .funding-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-right: 18px;
+	flex-basis: 23%;
 }
 
 .funding-top {
@@ -390,17 +397,41 @@ img[src*="arrow.svg"] {
 	line-height: 20px;
 }
 
-.categories ul {
+.categories > ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
-.categories ul > li {
-	flex-basis: 300px;
+
+.categories > ul > li {
+	flex-basis: 32%;
+	padding: 12px 0;
 }
+
+
+.categories > ul > li > ul {
+	list-style: disc;
+	color: #f42;
+	padding-left: 10px;
+	font-size: 13px;
+}
+
+.categories > ul > li ul li {
+	padding: 10px 0;
+}
+
+.categories ul ul a {
+	color: #555;
+}
+
+.categories ul ul li::marker {
+	font-size: 10px;
+}
+
 .categories ul figure {
 	position: relative;
 	display: grid;
+	grid-template-rows: 2fr 1fr;
 }
 
 .categories ul figure img {
@@ -418,6 +449,7 @@ img[src*="arrow.svg"] {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: #fff4f2;
 }
 
 .categories ul li div img {
@@ -435,11 +467,11 @@ img[src*="arrow.svg"] {
 
 .category-info {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-evenly;
 	align-items: flex-start;
 	flex-direction: column;
 	z-index: 5;
-	grid-column: 1 / -1;
-	grid-row: 1 / -1;
+	grid-column: 1/-1;
+	grid-row: 2;
 	color: #fff;
 }
