@@ -414,10 +414,13 @@ img[src*="arrow.svg"] {
 	color: #f42;
 	padding-left: 10px;
 	font-size: 13px;
+	text-transform: capitalize;
 }
 
 .categories > ul > li ul li {
 	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 5px;
 }
 
 .categories ul ul a {
@@ -456,12 +459,14 @@ img[src*="arrow.svg"] {
 }
 
 .categories li h3 {
-	display: inline;
+	display: inline-block;
 	font-size: 28px;
 	font-weight: 700;
 	line-height: 30.8px;
 	color: #f42;
 	padding: 10px 0 10px 10px;
+	margin-bottom: 5px;
+	text-transform: capitalize;
 }
 
 .category-info {
@@ -492,9 +497,23 @@ img[src*="arrow.svg"] {
 }
 
 .category-info p {
-
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	color: hsla(0,0%,100%,.6);
+	text-transform: capitalize;
 }
 
-.category-info p a {
-	
+.categories-latest span{
+	font-size: 13px;
+	color: #f42;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.categories-latest h4{
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #f42;
 }
