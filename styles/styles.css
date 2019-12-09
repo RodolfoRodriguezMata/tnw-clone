@@ -78,7 +78,7 @@ nav {
 #cover {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr fr;
+	grid-template-rows: 1fr 1fr;
 	height: 75vh;
 	max-height: 565px;
 	grid-gap: 7.5px;
@@ -108,9 +108,7 @@ nav {
 }
 
 .cover-logo {
-	max-width: 50%;
-	height: 100%;
-	max-height: 112px;
+	width: 50%;
 }
 
 .cover-lower {
@@ -545,7 +543,7 @@ img[src*="arrow.svg"] {
 	width: 100%;
 }
 
-.deals li div {
+.deals ul li div {
 	color: #000;
 	background-image: url("../images/deals-ribbon.svg");
 	background-repeat: no-repeat;
@@ -561,16 +559,34 @@ img[src*="arrow.svg"] {
 	overflow: hidden;
 }
 
-.deals li div div {
+.deals ul li div div {
 	transform: rotate(45deg);
 	font-size: 14px;
 	font-weight: 700;
 	position: relative;
-	top: 7.5px;
-	right: 17.5px;
+	top: 13.5px;
+	right: 18.5px;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
 	background: none;
 	padding: 5px;
+}
+
+.deals ul li h4 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+.deals ul li p span:nth-child(1) {
+	font-size: 13px;
+	text-decoration: line-through;
+	color: #aaa;
+	margin-right: 4px;
+}
+
+.deals ul li p span:nth-child(2) {
+	font-size: 16px;
+	color: #555;
 }
