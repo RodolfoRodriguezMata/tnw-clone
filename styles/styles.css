@@ -1,3 +1,12 @@
+@media screen and (max-width: 770px) {
+  #smaller-logo {
+		display:flex;
+	}
+	nav {
+		margin-left: 106px;
+	}
+}
+
 @font-face {
   font-family: Shentox;
   src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2") format("woff2"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.ttf") format("truetype");
@@ -28,12 +37,33 @@ nav {
 	margin-top: 100px;
 }
 
+#smaller-logo {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	height: 76px;
+	width: 106px;
+	background: linear-gradient(to bottom right,#c09,#f42 85%);
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+#smaller-logo img {
+	height: 16px;
+	width: 66px;
+}
+
 #nav-black {
 	background-color: black;
 	font-size: 13px;
 	color: hsla(0,0%,100%,.6);
 	display: flex;
 	justify-content: space-between;
+	padding: 0 5px;
 	align-items: center;
 }
 
@@ -52,6 +82,7 @@ nav {
 
 #right-nav {
 	display: flex;
+	margin-right: 5px;
 }
 
 #right-nav li {
@@ -413,8 +444,9 @@ img[src*="arrow.svg"] {
 	padding: 12px 7.5px;
 }
 
-
+.categories ul li ul{
 	color: #f42;
+	list-style: disc;
 	padding-left: 10px;
 	font-size: 13px;
 	text-transform: capitalize;
