@@ -517,3 +517,58 @@ img[src*="arrow.svg"] {
 	line-height: 1.25;
 	color: #f42;
 }
+
+.deals div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.deals div a {
+	color: #f42;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.deals ul {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.deals ul li {
+	width: 23.75%;
+	padding: 7.5px;
+	position: relative;
+}
+
+.deals ul li img {
+	width: 100%;
+}
+
+.deals li div {
+	color: #000;
+	background-image: url("../images/deals-ribbon.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	position: absolute;
+	display: block;
+	top: 7.5px;
+	right: 7.5px;
+	height: 80px;
+	width: 80px;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.deals li div div {
+	transform: rotate(45deg);
+	font-size: 14px;
+	font-weight: 700;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	background: none;
+	padding: 5px;
+}
