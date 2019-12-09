@@ -566,6 +566,8 @@ img[src*="arrow.svg"] {
 	font-size: 14px;
 	font-weight: 700;
 	position: relative;
+	top: 7.5px;
+	right: 17.5px;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
