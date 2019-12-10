@@ -115,8 +115,6 @@ nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	height: 75vh;
-	max-height: 565px;
 	grid-gap: 7.5px;
 }
 
@@ -193,8 +191,7 @@ nav {
 
 .background-1 {
 	width: 100%;
-	height: 75vh;
-	max-height: 560px;
+	height: 100%;
 	z-index: 0;
 	grid-column: 1 / -1;
 	grid-row: 1 / -1;
@@ -228,8 +225,7 @@ nav {
 
 .background-2 {
 	width: 100%;
-	height: 36.9vh;
-	max-height: 280px;
+	flex-basis: 200%;
 	z-index: 0;
 	grid-column: 1 / -1;
 	grid-row: 1 / -1;
@@ -292,6 +288,11 @@ img[src*="arrow.svg"] {
 	width: 100%;
 	margin-bottom: 6px;
 	border: 0.5px solid #aaa;
+}
+
+.latest-info {
+	display: flex;
+	flex-direction: column;
 }
 
 .latest-title {
@@ -553,13 +554,14 @@ img[src*="arrow.svg"] {
 	color: #f42;
 }
 
-.deals div {
+.deals>div {
 	display: flex;
 	justify-content: space-between;
+	align-items: baseline;
 	padding: 0 5px;
 }
 
-.deals div a {
+.deals>div a {
 	color: #f42;
 	font-size: 16px;
 	line-height: 18px;
@@ -581,7 +583,7 @@ img[src*="arrow.svg"] {
 	width: 100%;
 }
 
-.deals ul li div {
+.discount {
 	color: #000;
 	background-image: url("../images/deals-ribbon.svg");
 	background-repeat: no-repeat;
@@ -590,20 +592,20 @@ img[src*="arrow.svg"] {
 	position: absolute;
 	display: block;
 	top: 7.5px;
-	right: -2px;
+	right: 7px;
 	height: 80px;
 	width: 80px;
 	z-index: 10;
 	overflow: hidden;
 }
 
-.deals ul li div div {
+.discount div {
 	transform: rotate(45deg);
 	font-size: 14px;
 	font-weight: 700;
 	position: relative;
-	top: 13.5px;
-	right: 22.5px;
+	top: 20.5px;
+	right: -4px;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
@@ -615,6 +617,7 @@ img[src*="arrow.svg"] {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 20px;
+	color: #000;
 }
 
 .deals ul li p span:nth-child(1) {
@@ -691,12 +694,36 @@ footer b {
 		width: calc(100% - 106px);
 	}
 
+	.centering {
+		margin-top: 50px;
+	}
+
+	#main-fig {
+		height: 100.5%;
+	}
+
 	.cover-upper {
 		display: none;
 	}
 
+	.secondary-fig {
+		height: 100%;
+	}
+
+	.secondary-fig div {
+		height: 90%;
+	}
+
 	.orange {
 		display: none;
+	}
+
+	.black {
+		height: 100%;
+	}
+
+	.background-2 {
+		height: 100%;
 	}
 
 	#latest-news li {
@@ -713,7 +740,7 @@ footer b {
 	}
 
 	.funding-nav ul {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	#latest-funding div li:nth-child(2) {
@@ -723,10 +750,10 @@ footer b {
 
 	.cards-container {
 		justify-content: flex-start;
-		padding-left: 20px;
+		padding: 0 20px;
 	}
 
-	.cards-container div:nth-child(2) {
+	.second-card {
 		padding: 0 15px;
 	}
 
@@ -735,7 +762,7 @@ footer b {
 	}
 
 	.funding-card {
-		flex-basis: 25%;
+		flex-basis: 31%;
 	}
 
 	.funding-name {
@@ -779,14 +806,86 @@ footer b {
 	#cover {
 		display: flex;
 		flex-direction: column;
+		height: auto;
+		font-size: 10px;
 	}
 
-	#cover figure {
-		height: 30vh;
+	#main-fig {
+		margin-top: 5px;
+	}
+
+	.cover-title {
+		font-size: 27px;
+	}
+
+	.cover-lower {
+		grid-row: 1 / 3;
+	}
+
+	.secondary-fig {
+		height: 100%;
 		margin: 5px 0;
 	}
 
 	#latest-news li {
 		width: 100%;
+		padding: 15px 0;
+		flex-direction: row;
+		align-items: flex-start;
 	}
+
+	.latest-img {
+		width: 75px;
+	}
+
+	.latest-info {
+		margin-left: 7.5px;
+	}
+
+	.cards-container {
+		flex-direction: column;
+	}
+
+	.funding-card:nth-child(2) {
+		margin: 0;
+		padding: 0;
+	}
+
+	.funding-top {
+		grid-template-columns: 1fr 5fr;
+	}
+
+	.categories ul li {
+		flex-basis: 100%;
+	}
+
+	.deals ul {
+		flex-direction: column;
+	}
+
+	.deals ul li {
+		display: flex;
+	}
+
+	.deals ul li img {
+		width: 20%;
+	}
+
+	.discount {
+		display: none;
+	}
+
+	.deal-info {
+		padding-left: 7.5px;
+	}
+
+	#about-page {
+		display:flex;
+		flex-direction: column;
+	}
+
+	#about-page span {
+		margin: 5px auto;
+	}
+
 }
