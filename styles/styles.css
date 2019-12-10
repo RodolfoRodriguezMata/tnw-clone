@@ -104,6 +104,11 @@ nav {
 	padding: 13px;
 }
 
+#hamburguer {
+	height: 40px;
+	display: none;
+}
+
 #cover {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -674,8 +679,8 @@ footer b {
 	color: #f42;
 }
 
-@media screen and (max-width: 1024px) {
-  #smaller-logo {
+@media screen and (max-width: 1023px) {
+	#smaller-logo {
 		display:flex;
 	}
 
@@ -687,49 +692,65 @@ footer b {
 	.orange {
 		display: none;
 	}
-}
 
-@media screen and (max-width: 768px) {
 	#latest-news li {
 		width: 28%;
 	}
+
 	#right-nav {
 		display: none;
 	}
+
 	.funding-nav {
 		flex-direction: column;
 		padding-left: 10px;
 	}
+
 	.funding-nav ul {
 		flex-direction: column;
 	}
+
 	#latest-funding div li:nth-child(2) {
 		border: none;
 		padding: 10px 0;
 	}
+
 	.cards-container {
 		justify-content: flex-start;
 		padding-left: 20px;
 	}
+
 	.cards-container div:nth-child(2) {
 		padding: 0 15px;
 	}
+
 	.cards-container div:nth-child(4) {
 		display: none;
 	}
+
 	.funding-card {
 		flex-basis: 25%;
 	}
+
 	.funding-name {
 		padding-left: 5px;
 	}
+
 	.funding-top div {
 		padding-left: 5px;
 	}
+
 	.categories ul li {
 		flex-basis: 48%;
 	}
+	
 	.deals ul li {
 		flex-basis: 31%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#nav-black {
+		display: none;
 	}
 }
