@@ -262,12 +262,14 @@ img[src*="arrow.svg"] {
 #latest-news ul {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 #latest-news li {
 	display: flex;
 	flex-direction: column;
+	width: 20%;
+	padding: 20px;
 }
 
 .title {
@@ -279,8 +281,7 @@ img[src*="arrow.svg"] {
 }
 
 .latest-img {
-	width: 270px;
-	height: 135px;
+	width: 100%;
 	margin-bottom: 6px;
 	border: 0.5px solid #aaa;
 }
@@ -431,7 +432,7 @@ img[src*="arrow.svg"] {
 }
 
 .categories > ul > li {
-	flex-basis: 32%;
+	flex-basis: 31%;
 	padding: 12px 7.5px;
 }
 
@@ -547,6 +548,7 @@ img[src*="arrow.svg"] {
 .deals div {
 	display: flex;
 	justify-content: space-between;
+	padding: 0 5px;
 }
 
 .deals div a {
@@ -562,7 +564,7 @@ img[src*="arrow.svg"] {
 }
 
 .deals ul li {
-	width: 23.75%;
+	flex-basis: 23%;
 	padding: 7.5px;
 	position: relative;
 }
@@ -580,7 +582,7 @@ img[src*="arrow.svg"] {
 	position: absolute;
 	display: block;
 	top: 7.5px;
-	right: 7.5px;
+	right: -2px;
 	height: 80px;
 	width: 80px;
 	z-index: 10;
@@ -593,7 +595,7 @@ img[src*="arrow.svg"] {
 	font-weight: 700;
 	position: relative;
 	top: 13.5px;
-	right: 18.5px;
+	right: 22.5px;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
@@ -688,7 +690,45 @@ footer b {
 
 @media screen and (max-width: 768px) {
 	#latest-news li {
-		flex-direction: row;
-		align-items: center;
+		width: 28%;
+	}
+	#right-nav {
+		display: none;
+	}
+	.funding-nav {
+		flex-direction: column;
+		padding-left: 10px;
+	}
+	.funding-nav ul {
+		flex-direction: column;
+	}
+	#latest-funding div li:nth-child(2) {
+		border: none;
+		padding: 10px 0;
+	}
+	.cards-container {
+		justify-content: flex-start;
+		padding-left: 20px;
+	}
+	.cards-container div:nth-child(2) {
+		padding: 0 15px;
+	}
+	.cards-container div:nth-child(4) {
+		display: none;
+	}
+	.funding-card {
+		flex-basis: 25%;
+	}
+	.funding-name {
+		padding-left: 5px;
+	}
+	.funding-top div {
+		padding-left: 5px;
+	}
+	.categories ul li {
+		flex-basis: 48%;
+	}
+	.deals ul li {
+		flex-basis: 31%;
 	}
 }
