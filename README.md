@@ -35,7 +35,7 @@ Project: Building with responsive design
     <a href="https://github.com/RodolfoRodriguezMata/tnw-clone/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://raw.githack.com/RodolfoRodriguezMata/tnw-clone/feature-branch/index.html">View Demo</a>
+    <a href="https://raw.githack.com/RodolfoRodriguezMata/tnw-clone/master/index.html">View Demo</a>
     ·
     <a href="https://github.com/RodolfoRodriguezMata/tnw-clone/issues">Report Bug</a>
     ·
