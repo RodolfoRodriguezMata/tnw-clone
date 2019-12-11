@@ -19,7 +19,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	box-shadow: 0 0 32px rgba(0,0,0,.15);
+	box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
 }
 
 .centering {
@@ -34,7 +34,7 @@ nav {
 	align-items: center;
 	height: 76px;
 	width: 106px;
-	background: linear-gradient(to bottom right,#c09,#f42 85%);
+	background: linear-gradient(to bottom right, #c09, #f42 85%);
 	position: absolute;
 	z-index: 2;
 	top: 0;
@@ -51,7 +51,7 @@ nav {
 #nav-black {
 	background-color: black;
 	font-size: 13px;
-	color: hsla(0,0%,100%,.6);
+	color: hsla(0 ,0% ,100%, 0.6);
 	display: flex;
 	justify-content: space-between;
 	padding: 0 5px;
@@ -87,7 +87,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 14px;
-	box-shadow: 0 0 32px rgba(0,0,0,.15);
+	box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
 }
 
 #nav-white ul {
@@ -229,7 +229,7 @@ nav {
 	z-index: 0;
 	grid-column: 1 / -1;
 	grid-row: 1 / -1;
-	background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+	background: rgba(0, 0, 0, 0.25) url(../img/image-gradient.png) no-repeat;
 	background-size: auto;
 	background-size: 100% 100%;
 }
@@ -681,7 +681,7 @@ footer b {
 
 @media screen and (max-width: 1023px) {
 	#smaller-logo {
-		display:flex;
+		display: flex;
 	}
 
 	nav {
@@ -807,6 +807,7 @@ footer b {
 
 	#main-fig {
 		margin-top: 5px;
+		height: 60vh;
 	}
 
 	.cover-title {
@@ -818,8 +819,12 @@ footer b {
 	}
 
 	.secondary-fig {
-		height: 100%;
+		height: 60vh;
 		margin: 5px 0;
+	}
+
+	.secondary-fig div {
+		height: 95%;
 	}
 
 	#latest-news li {
@@ -875,7 +880,7 @@ footer b {
 	}
 
 	#about-page {
-		display:flex;
+		display: flex;
 		flex-direction: column;
 	}
 
